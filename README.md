@@ -25,27 +25,27 @@ here include:
 
 ## Classes
 
-| Class Name | Label | Description | Properties |
-| ---------- | ----- | ----------- | ---------- |
-| [s3n:Device](#device) | Device | A device is a physical piece of technology - a system in a box. Devices may of course be built of smaller devices and software components (i.e. systems have components). | dct:title <br> dct:description <br> dct:hasPart |
-| [s3n:Sensor](https://imergo.com/ns/2015/s3n#Sensor) | Sensor |Any thing that can follow a sensing Method to observe a Property | [s3n:observes](https://imergo.com/ns/2015/s3n#observes) <br>[s3n:detects](https://imergo.com/ns/2015/s3n#detects) <br>[s3n:hasMeasurementCapability](https://imergo.com/ns/2015/s3n#hasMeasurementCapability) 
-| [s3n:Observation](https://imergo.com/ns/2015/s3n#Observation) | Observation |A situation in which a Sensing method has been used to estimate or calculate a value of a Property. | [s3n:observedBy](https://imergo.com/ns/2015/s3n#observedBy) <br>[s3n:observedProperty](https://imergo.com/ns/2015/s3n#observedProperty) <br>[s3n:observationResult](https://imergo.com/ns/2015/s3n#observationResult) <br>[dct:includesEvent](http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent) <br>[s3n:observationResultTime](https://imergo.com/ns/2015/s3n#observationResultTime)
-| [s3n:SensorInput](https://imergo.com/ns/2015/s3n#SensorInput) | SensorInput |An Event in the real world that 'triggers' the sensor| 
-| [s3n:SensorOutput](https://imergo.com/ns/2015/s3n#SensorOutput) | SensorOutput |A sensor outputs a piece of information, the value itself being represented by an ObservationValue| [s3n:isProducedBy](https://imergo.com/ns/2015/s3n#isProducedBy) <br>[s3n:hasValue](https://imergo.com/ns/2015/s3n#hasValue) 
-| [s3n:Condition](https://imergo.com/ns/2015/s3n#Condition) | Condition |Used to specify ranges for qualities that act as conditions on a system/sensor's operation| 
-| [s3n:MeasurementCapability](https://imergo.com/ns/2015/s3n#MeasurementCapability) |Measurement Capability|Collects together measurement properties and the environmental conditions in which those properties hold| [s3n:hasCondition](https://imergo.com/ns/2015/s3n#hasCondition) <br>[s3n:hasMeasurementProperty](https://imergo.com/ns/2015/s3n#hasCondition)
-| [s3n:ObservationValue](https://imergo.com/ns/2015/s3n#ObservationValue)| Observation Value |The value of the result of an Observation| 
-| [s3n:MeasurementProperty](https://imergo.com/ns/2015/s3n#MeasurementProperty)| Measurement Property|An identifiable and observable characteristic of a sensor's observations or ability to make observations| 
-| [s3n:Accuracy](https://imergo.com/ns/2015/s3n#Accuracy) | Accuracy |The closeness of agreement between the value of an observation and the true value of the observed quality| | 
-| [s3n:Frequency](https://imergo.com/ns/2015/s3n#Frequency) | Frequency |The smallest possible time between one observation and the next| |
-| [s3n:Precision](https://imergo.com/ns/2015/s3n#Precision) | Precision |The closeness of agreement between replicate observations on an unchanged or similar quality value| |
-| [s3n:Resolution](https://imergo.com/ns/2015/s3n#Resolution) | Resolution |The smallest difference in the value of a quality being observed that would result in perceptably different values of observation results| |
-| [s3n:ResponseTime](https://imergo.com/ns/2015/s3n#ResponseTime) | Response Time |The time between a change in the value of an observed quality and a sensor 'settling' on an observed value.| |
-| [s3n:Sensitivity](https://imergo.com/ns/2015/s3n#Sensitivity) | Sensitivity |Sensitivity is the quotient of the change in a result of sensor and the corresponding change in a value of a quality being observed| |
+| Class Name | Label | Description | Related Properties |
+| ---------- | ----- | ----------- | ------------------ |
+| **[s3n:Device](#Device)** | Device | A device is a physical piece of technology - a system in a box. Devices may of course be built of smaller devices and software components (i.e. systems have components). | `dct:title` <br> `dct:description` <br> `dct:hasPart` |
+| **[s3n:Sensor](#Sensor)** | Sensor | Sensors may be physical devices, computational methods, a laboratory setup with a person following a method, or any other thing that can follow a method to observe a property. | [s3n:observes](#observes) <br> [s3n:detects](#detects) <br> [s3n:hasMeasurementCapability](#hasMeasurementCapability) |
+| [s3n:Observation](#Observation) | Observation |A situation in which a Sensing method has been used to estimate or calculate a value of a Property. | [s3n:observedBy](#observedBy) <br>[s3n:observedProperty](#observedProperty) <br>[s3n:observationResult](#observationResult) <br>[dct:includesEvent](http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent) <br>[s3n:observationResultTime](#observationResultTime)
+| [s3n:SensorInput](#SensorInput) | SensorInput |An Event in the real world that 'triggers' the sensor| 
+| [s3n:SensorOutput](#SensorOutput) | SensorOutput |A sensor outputs a piece of information, the value itself being represented by an ObservationValue| [s3n:isProducedBy](#isProducedBy) <br>[s3n:hasValue](#hasValue) 
+| [s3n:Condition](#Condition) | Condition |Used to specify ranges for qualities that act as conditions on a system/sensor's operation| 
+| [s3n:MeasurementCapability](#MeasurementCapability) |Measurement Capability|Collects together measurement properties and the environmental conditions in which those properties hold| [s3n:hasCondition](#hasCondition) <br>[s3n:hasMeasurementProperty](#hasCondition)
+| [s3n:ObservationValue](#ObservationValue)| Observation Value |The value of the result of an Observation| 
+| [s3n:MeasurementProperty](#MeasurementProperty)| Measurement Property|An identifiable and observable characteristic of a sensor's observations or ability to make observations| 
+| [s3n:Accuracy](#Accuracy) | Accuracy |The closeness of agreement between the value of an observation and the true value of the observed quality| | 
+| [s3n:Frequency](#Frequency) | Frequency |The smallest possible time between one observation and the next| |
+| [s3n:Precision](#Precision) | Precision |The closeness of agreement between replicate observations on an unchanged or similar quality value| |
+| [s3n:Resolution](#Resolution) | Resolution |The smallest difference in the value of a quality being observed that would result in perceptably different values of observation results| |
+| [s3n:ResponseTime](#ResponseTime) | Response Time |The time between a change in the value of an observed quality and a sensor 'settling' on an observed value.| |
+| [s3n:Sensitivity](#Sensitivity) | Sensitivity |Sensitivity is the quotient of the change in a result of sensor and the corresponding change in a value of a quality being observed| |
 
-<h3 id="device">Device</h3>
+<h3 id="Device">Device</h3>
 
-- **Label**: Device (```https://imergo.com/ns/2015/s3n#Device```)
+- **Label**: Device (`https://imergo.com/ns/2015/s3n#Device`)
 - **Description**: A device is a physical piece of technology - a system in a
   box. Devices may of course be built of smaller devices and software
   components (i.e. systems have components).
@@ -56,125 +56,143 @@ here include:
   + dct:description
   + dct:hasPart
 
-### Sensor {#sensor}
+<h3 id="Sensor">Sensor</h3>
 
-Sensors may be physical devices, computational methods, a laboratory setup with a person following a method, or any other thing that can follow a Sensing Method to observe a Property. 
-URI:(https://imergo.com/ns/2015/s3n#Sensor) 
+- **Label**: Sensor (`https://imergo.com/ns/2015/s3n#Sensor`)
+- **Description**: Sensors may be physical devices, computational methods, a
+  laboratory setup with a person following a method, or any other thing that
+  can follow a method to observe a property
+- **Domain of**:
+- **Range of**:
+- **Related properties**:
+  + dct:title 
+  + dct:description
+  + dct:hasPart
 
-##Observation
+<h3 id="Observation">Observation</h3>
 
 An Observation is a Situation in which a Sensing method has been used to estimate or calculate a value of a Property. 
 
-##Condition
+<h3 id="Condition">Condition</h3>
 
 Used to specify ranges for qualities that act as conditions on a system/sensor's operation
 
-##ObservationValue
+<h3 id="ObservationValue">ObservationValue</h3>
 
 The value of the result of an Observation. An Observation has a result which is the output of some sensor, the result is an information object that encodes some value for a Feature.
 
-##MeasurementCapability
+<h3 id="MeasurementCapability">MeasurementCapability</h3>
 
 Collects together measurement properties (accuracy, range, precision, etc) and the environmental conditions in which those properties hold, representing a specification of a sensor's capability in those conditions. 
 
-##MeasurementProperty
+<h3 id="MeasurementProperty">MeasurementProperty</h3>
 
 An identifiable and observable characteristic of a sensor's observations or ability to make observations.
 
-##SensorInput
+<h3 id="SensorInput">SensorInput</h3>
 
 An Event in the real world that 'triggers' the sensor. 
 
-##SensorOutput
+<h3 id="SensorOutput">SensorOutput</h3>
 
 A sensor outputs a piece of information (an observed value), the value itself being represented by an ObservationValue.
 
-##Property
+<h3 id="Property">Property</h3>
 
 An observable Quality of an Event or Object.
 
-##Accuracy
+### Accuracy
 
 The closeness of agreement between the value of an observation and the true value of the observed quality.
 
-##Frequency
+### Frequency
 
 The smallest possible time between one observation and the next.
 
-##Precision
+### Precision
 
 The closeness of agreement between replicate observations on an unchanged or similar quality value: i.e., a measure of a sensor's ability to consitently reproduce an observation.
 
-##Resolution
+### Resolution
 
 The smallest difference in the value of a quality being observed that would result in perceptably different values of observation results.
 
-##ResponseTime
+### ResponseTime
 
 The time between a (step) change inthe value of an observed quality and a sensor (possibly with specified error) 'settling' on an observed value.
 
-##Sensitivity
+### Sensitivity
 
 Sensitivity is the quotient of the change in a result of sensor and the corresponding change in a value of a quality being observed.
 
-
-# Properties
+## Properties
 
 Class Name | Label | Domain | Range 
 :----------: |:-----: |:-----------: |:------------------
-| [s3n:detects](https://imergo.com/ns/2015/s3n#detects) | detects | [s3n:Sensor](https://imergo.com/ns/2015/s3n#Sensor) | [s3n:SensorInput](https://imergo.com/ns/2015/s3n#SensorInput)
-| [s3n:observes](https://imergo.com/ns/2015/s3n#observes) | Sensor | [s3n:Sensor](https://imergo.com/ns/2015/s3n#Sensor) | [s3n:Property](https://imergo.com/ns/2015/s3n#Property)
-| [s3n:hasMeasurementCapability](https://imergo.com/ns/2015/s3n#hasMeasurementCapability) | hasMeasurementCapability | [s3n:Sensor](https://imergo.com/ns/2015/s3n#Sensor) | [s3n:MeasurementCapability](https://imergo.com/ns/2015/s3n#MeasurementCapability) 
-| [s3n:observedProperty](https://imergo.com/ns/2015/s3n#observedProperty) | observedProperty | [s3n:Observation](https://imergo.com/ns/2015/s3n#Observation) | [s3n:Property](https://imergo.com/ns/2015/s3n#Property)
-| [s3n:observationResult](https://imergo.com/ns/2015/s3n#observationResult) | observationResult | [s3n:Observation](https://imergo.com/ns/2015/s3n#Observation) | [s3n:SensorOutput](https://imergo.com/ns/2015/s3n#Output)
-| [s3n:isProducedBy](https://imergo.com/ns/2015/s3n#isProducedBy) | isProducedBy | [s3n:SensorOutput](https://imergo.com/ns/2015/s3n#SensorOutput) | [s3n:Sensor](https://imergo.com/ns/2015/s3n#Sensor)
-| [s3n:observedBy](https://imergo.com/ns/2015/s3n#observedBy) | observedBy | [s3n:Observation](https://imergo.com/ns/2015/s3n#Observation) | [s3n:Sensor](https://imergo.com/ns/2015/s3n#Sensor) 
-| [s3n:hasMeasurementProperty](https://imergo.com/ns/2015/s3n#hasMeasurementProperty) | hasMeasurementProperty | [s3n:MeasurementCapability](https://imergo.com/ns/2015/s3n#MeasurementCapability) | [s3n:MeasurementProperty](https://imergo.com/ns/2015/s3n#MeasurementProperty)
+| [s3n:detects](#detects) | detects | [s3n:Sensor](#Sensor) | [s3n:SensorInput](#SensorInput)
+| [s3n:observes](#observes) | Sensor | [s3n:Sensor](#Sensor) | [s3n:Property](#Property)
+| [s3n:hasMeasurementCapability](#hasMeasurementCapability) | hasMeasurementCapability | [s3n:Sensor](#Sensor) | [s3n:MeasurementCapability](#MeasurementCapability) 
+| [s3n:observedProperty](#observedProperty) | observedProperty | [s3n:Observation](#Observation) | [s3n:Property](#Property)
+| [s3n:observationResult](#observationResult) | observationResult | [s3n:Observation](#Observation) | [s3n:SensorOutput](#Output)
+| [s3n:isProducedBy](#isProducedBy) | isProducedBy | [s3n:SensorOutput](#SensorOutput) | [s3n:Sensor](#Sensor)
+| [s3n:observedBy](#observedBy) | observedBy | [s3n:Observation](#Observation) | [s3n:Sensor](#Sensor) 
+| [s3n:hasMeasurementProperty](#hasMeasurementProperty) | hasMeasurementProperty | [s3n:MeasurementCapability](#MeasurementCapability) | [s3n:MeasurementProperty](#MeasurementProperty)
  
-##detects
+<h3 id="detects">detects</h3>
 
 A relation from a sensor to the Stimulus(input) that the sensor can detect.
-<br>Domain: [s3n:Sensor](https://imergo.com/ns/2015/s3n#Sensor)
-<br>Range: [s3n:SesorInput](https://imergo.com/ns/2015/s3n#SensorInput)
 
-##observes
+- Domain: [s3n:Sensor](#Sensor)
+- Range: [s3n:SesorInput](#SensorInput)
+
+<h3 id="observes">observes</h3>
 
 Relation between a Sensor and a Property that the sensor can observe.
-<br>Domain: [s3n:Sensor](https://imergo.com/ns/2015/s3n#Sensor)
-<br>Range: [s3n:Property](https://imergo.com/ns/2015/s3n#Property)
 
-##hasMeasurementCapability
+- Domain: [s3n:Sensor](#Sensor)
+- Range: [s3n:Property](#Property)
+
+<h3 id="hasMeasurementCapability">hasMeasurementCapability</h3>
 
 Relation from a Sensor to a MeasurementCapability describing the measurement properties of the sensor.
-<br>Domain: [s3n:Sensor](https://imergo.com/ns/2015/s3n#Sensor)
-<br>Range: [s3n:MeasurementCapability](https://imergo.com/ns/2015/s3n#MeasurementCapability)
 
-##observedProperty
+- Domain: [s3n:Sensor](#Sensor)
+- Range: [s3n:MeasurementCapability](#MeasurementCapability)
+
+<h3 id="observedProperty">observedProperty</h3>
 
 Relation linking an Observation to the Property that was observed.
-<br>Domain: [s3n:Observation](https://imergo.com/ns/2015/s3n#Observation)
-<br>Range: [s3n:Property](https://imergo.com/ns/2015/s3n#Property)
 
-##observationResult
+- Domain: [s3n:Observation](#Observation)
+- Range: [s3n:Property](#Property)
 
-Relation linking an Observation (i.e., a description of the context, the Situation, in which the observatioin was made) and a Result, which contains a value representing the value associated with the observed Property.
-<br>Domain: [s3n:Observation](https://imergo.com/ns/2015/s3n#Observation)
-<br>Range: [s3n:SensorOutput](https://imergo.com/ns/2015/s3n#SensorOutput)
+<h3 id="observationResult">observationResult</h3>
 
-##isProducedBy
+Relation linking an Observation (i.e., a description of the context, the
+Situation, in which the observatioin was made) and a Result, which contains a
+value representing the value associated with the observed Property.
 
-Relation between a producer and a produced entity: for example, between a sensor and the produced output.
-<br>Domain: [s3n:SensorOutput](https://imergo.com/ns/2015/s3n#SensorOutput)
-<br>Range: [s3n:Sensor](https://imergo.com/ns/2015/s3n#Sensor)
+- Domain: [s3n:Observation](#Observation)
+- Range: [s3n:SensorOutput](#SensorOutput)
 
-##observedBy
+<h3 id="isProducedBy">isProducedBy</h3>
+
+Relation between a producer and a produced entity: for example, between a
+ sensor and the produced output.
+ 
+- Domain: [s3n:SensorOutput](#SensorOutput)
+- Range: [s3n:Sensor](#Sensor)
+
+<h3 id="observedBy">observedBy</h3>
 
 Relation between an Observation and Sensor.
-<br>Domain: [s3n:Observation](https://imergo.com/ns/2015/s3n#Observayion)
-<br>Range: [s3n:Sensor](https://imergo.com/ns/2015/s3n#Sensor)
 
-##hasMeasurementProperty
+- Domain: [s3n:Observation](#Observayion)
+- Range: [s3n:Sensor](#Sensor)
 
-Relation from a MeasurementCapability to a MeasurementProperty
-<br>Domain: [s3n:MeasurementCapability](https://imergo.com/ns/2015/s3n#MeasurementCapability)
-<br>Range: [s3n:MeasurementProperty](https://imergo.com/ns/2015/s3n#MeasurementProperty)
+<h3 id="hasMeasurementProperty">hasMeasurementProperty</h3>
+
+Relation from a MeasurementCapability to a MeasurementProperty:
+
+- Domain: [s3n:MeasurementCapability](#MeasurementCapability)
+- Range: [s3n:MeasurementProperty](#MeasurementProperty)
