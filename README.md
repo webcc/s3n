@@ -27,7 +27,7 @@ here include:
 
 | Class Name | Label | Description | Properties |
 | ---------- | ----- | ----------- | ---------- |
-| [s3n:Device][#device] | Device | A device is a physical piece of technology - a system in a box. Devices may of course be built of smaller devices and software components (i.e. systems have components). | dct:title <br> dct:description <br> dct:hasPart |
+| [s3n:Device](#device) | Device | A device is a physical piece of technology - a system in a box. Devices may of course be built of smaller devices and software components (i.e. systems have components). | dct:title <br> dct:description <br> dct:hasPart |
 | [s3n:Sensor](https://imergo.com/ns/2015/s3n#Sensor) | Sensor |Any thing that can follow a sensing Method to observe a Property | [s3n:observes](https://imergo.com/ns/2015/s3n#observes) <br>[s3n:detects](https://imergo.com/ns/2015/s3n#detects) <br>[s3n:hasMeasurementCapability](https://imergo.com/ns/2015/s3n#hasMeasurementCapability) 
 | [s3n:Observation](https://imergo.com/ns/2015/s3n#Observation) | Observation |A situation in which a Sensing method has been used to estimate or calculate a value of a Property. | [s3n:observedBy](https://imergo.com/ns/2015/s3n#observedBy) <br>[s3n:observedProperty](https://imergo.com/ns/2015/s3n#observedProperty) <br>[s3n:observationResult](https://imergo.com/ns/2015/s3n#observationResult) <br>[dct:includesEvent](http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent) <br>[s3n:observationResultTime](https://imergo.com/ns/2015/s3n#observationResultTime)
 | [s3n:SensorInput](https://imergo.com/ns/2015/s3n#SensorInput) | SensorInput |An Event in the real world that 'triggers' the sensor| 
@@ -43,7 +43,7 @@ here include:
 | [s3n:ResponseTime](https://imergo.com/ns/2015/s3n#ResponseTime) | Response Time |The time between a change in the value of an observed quality and a sensor 'settling' on an observed value.| |
 | [s3n:Sensitivity](https://imergo.com/ns/2015/s3n#Sensitivity) | Sensitivity |Sensitivity is the quotient of the change in a result of sensor and the corresponding change in a value of a quality being observed| |
 
-### Device {#device}
+<h3 id="device">Device</h3>
 
 - **Label**: Device (```https://imergo.com/ns/2015/s3n#Device```)
 - **Description**: A device is a physical piece of technology - a system in a
@@ -52,9 +52,9 @@ here include:
 - **Domain of**:
 - **Range of**:
 - **Related properties**:
--+ dct:title 
--+ dct:description
--+ dct:hasPart
+  + dct:title 
+  + dct:description
+  + dct:hasPart
 
 ### Sensor {#sensor}
 
