@@ -101,42 +101,42 @@ A sensor outputs a piece of information (an observed value), the value itself be
 
 An observable Quality of an Event or Object.
 
-### Accuracy
+<h3 id="Accuracy">Accuracy</h3>
 
 The closeness of agreement between the value of an observation and the true value of the observed quality.
 
-### Frequency
+<h3 id="Frequency">Frequency</h3>
 
 The smallest possible time between one observation and the next.
 
-### Precision
+<h3 id="Precision">Precision</h3>
 
 The closeness of agreement between replicate observations on an unchanged or similar quality value: i.e., a measure of a sensor's ability to consitently reproduce an observation.
 
-### Resolution
+<h3 id="Resolution">Resolution</h3>
 
 The smallest difference in the value of a quality being observed that would result in perceptably different values of observation results.
 
-### ResponseTime
+<h3 id="ResponseTime">ResponseTime</h3>
 
-The time between a (step) change inthe value of an observed quality and a sensor (possibly with specified error) 'settling' on an observed value.
+The time between a (step) change in the value of an observed quality and a sensor (possibly with specified error) 'settling' on an observed value.
 
-### Sensitivity
+<h3 id="Sensitivity">Sensitivity</h3>
 
 Sensitivity is the quotient of the change in a result of sensor and the corresponding change in a value of a quality being observed.
 
 ## Properties
 
-Class Name | Label | Domain | Range 
-:----------: |:-----: |:-----------: |:------------------
-| [s3n:detects](#detects) | detects | [s3n:Sensor](#Sensor) | [s3n:SensorInput](#SensorInput)
-| [s3n:observes](#observes) | Sensor | [s3n:Sensor](#Sensor) | [s3n:Property](#Property)
-| [s3n:hasMeasurementCapability](#hasMeasurementCapability) | hasMeasurementCapability | [s3n:Sensor](#Sensor) | [s3n:MeasurementCapability](#MeasurementCapability) 
-| [s3n:observedProperty](#observedProperty) | observedProperty | [s3n:Observation](#Observation) | [s3n:Property](#Property)
-| [s3n:observationResult](#observationResult) | observationResult | [s3n:Observation](#Observation) | [s3n:SensorOutput](#Output)
-| [s3n:isProducedBy](#isProducedBy) | isProducedBy | [s3n:SensorOutput](#SensorOutput) | [s3n:Sensor](#Sensor)
-| [s3n:observedBy](#observedBy) | observedBy | [s3n:Observation](#Observation) | [s3n:Sensor](#Sensor) 
-| [s3n:hasMeasurementProperty](#hasMeasurementProperty) | hasMeasurementProperty | [s3n:MeasurementCapability](#MeasurementCapability) | [s3n:MeasurementProperty](#MeasurementProperty)
+| Property Name | Label | Domain | Range |
+| ------------- | ----- | ------ | ----- |
+| [s3n:detects](#detects) | detects | [s3n:Sensor](#Sensor) | [s3n:SensorInput](#SensorInput) |
+| [s3n:observes](#observes) | Sensor | [s3n:Sensor](#Sensor) | [s3n:Property](#Property) |
+| [s3n:hasMeasurementCapability](#hasMeasurementCapability) | hasMeasurementCapability | [s3n:Sensor](#Sensor) | [s3n:MeasurementCapability](#MeasurementCapability) |
+| [s3n:observedProperty](#observedProperty) | observedProperty | [s3n:Observation](#Observation) | [s3n:Property](#Property) |
+| [s3n:observationResult](#observationResult) | observationResult | [s3n:Observation](#Observation) | [s3n:SensorOutput](#Output) |
+| [s3n:isProducedBy](#isProducedBy) | isProducedBy | [s3n:SensorOutput](#SensorOutput) | [s3n:Sensor](#Sensor) |
+| [s3n:observedBy](#observedBy) | observedBy | [s3n:Observation](#Observation) | [s3n:Sensor](#Sensor) |
+| [s3n:hasMeasurementProperty](#hasMeasurementProperty) | hasMeasurementProperty | [s3n:MeasurementCapability](#MeasurementCapability) | [s3n:MeasurementProperty](#MeasurementProperty) |
  
 <h3 id="detects">detects</h3>
 
