@@ -63,7 +63,12 @@ here include:
   laboratory setup with a person following a method, or any other thing that
   can follow a method to observe a property
 - **Domain of**:
+  +  [s3n:detects](#detects)
+  +  [s3n:observes](#observes)
+  +  [s3n:hasMeasurementCapability](#hasMeasurementCapability)
 - **Range of**:
+  +  [s3n:isProducedBy](#isProducedBy)
+  +  [s3n:observedBy](#observedBy)
 - **Related properties**:
   + [s3n:observes](#observes)
   + [s3n:detects](#detects)
@@ -75,6 +80,9 @@ here include:
 - **Label**: Observation (`https://imergo.com/ns/2015/s3n#Observation`)
 - **Description**: An Observation is a Situation in which a Sensing method has been used to estimate or calculate a value of a Property. 
 - **Domain of**:
+  + [s3n:observedProperty](#observedProperty)
+  + [s3n:observationResult](#observationResult)
+  + [s3n:observedBy](#observedBy)
 - **Range of**:
 - **Related properties**:
   + [s3n:observedBy](#observedBy)
@@ -104,7 +112,9 @@ here include:
 - **Label**: MeasurementCapability (`https://imergo.com/ns/2015/s3n#MeasurementCapability`)
 - **Description**:Collects together measurement properties (accuracy, range, precision, etc) and the environmental conditions in which those properties hold, representing a specification of a sensor's capability in those conditions. 
 - **Domain of**:
+  + [s3n:hasMeasurementProperty](#hasMeasurementProperty)
 - **Range of**:
+  + [s3n:hasMeasurementCapability](#hasMeasurementCapability)
 - **Related properties**:
   + [s3n:hasCondition](#hasCondition)
   + [s3n:hasMeasurementProperty](#hasMeasurementProperty)
@@ -115,6 +125,7 @@ here include:
 - **Description**:An identifiable and observable characteristic of a sensor's observations or ability to make observations.
 - **Domain of**:
 - **Range of**:
+  + [s3n:hasMeasurementProperty](#hasMeasurementProperty)
 - **Related properties**:
 
 <h3 id="SensorInput">SensorInput</h3>
@@ -123,6 +134,7 @@ here include:
 - **Description**:An Event in the real world that 'triggers' the sensor. 
 - **Domain of**:
 - **Range of**:
+  + [s3n:detects](#detects)
 - **Related properties**:
 
 <h3 id="SensorOutput">SensorOutput</h3>
@@ -130,7 +142,9 @@ here include:
 - **Label**: SensorOutput (`https://imergo.com/ns/2015/s3n#SensorOutput`)
 - **Description**:A sensor outputs a piece of information (an observed value), the value itself being represented by an ObservationValue.
 - **Domain of**:
+  + [s3n:isProducedBy](#isProducedBy)
 - **Range of**:
+  + [s3n:observationResult](#observationResult)
 - **Related properties**:
  + [s3n:isProducedBy](#isProducedBy)
  + [s3n:hasValue](#hasValue) 
@@ -141,6 +155,8 @@ here include:
 - **Description**:An observable Quality of an Event or Object.
 - **Domain of**:
 - **Range of**:
+ + [s3n:observes](#observes)
+ + [s3n:observedProperty](#observedProperty)
 - **Related properties**:
 
 <h3 id="Accuracy">Accuracy</h3>
@@ -197,7 +213,7 @@ here include:
 | Property Name | Label | Domain | Range |
 | ------------- | ----- | ------ | ----- |
 | [s3n:detects](#detects) | detects | [s3n:Sensor](#Sensor) | [s3n:SensorInput](#SensorInput) |
-| [s3n:observes](#observes) | Sensor | [s3n:Sensor](#Sensor) | [s3n:Property](#Property) |
+| [s3n:observes](#observes) | observes | [s3n:Sensor](#Sensor) | [s3n:Property](#Property) |
 | [s3n:hasMeasurementCapability](#hasMeasurementCapability) | hasMeasurementCapability | [s3n:Sensor](#Sensor) | [s3n:MeasurementCapability](#MeasurementCapability) |
 | [s3n:observedProperty](#observedProperty) | observedProperty | [s3n:Observation](#Observation) | [s3n:Property](#Property) |
 | [s3n:observationResult](#observationResult) | observationResult | [s3n:Observation](#Observation) | [s3n:SensorOutput](#Output) |
