@@ -77,7 +77,7 @@ here include:
 - **Domain of**:
 - **Range of**:
 - **Related properties**:
-  + [s3n:observedBy]#observedBy)
+  + [s3n:observedBy](#observedBy)
   + [s3n:observedProperty](#observedProperty)
   + [s3n:observationResult](#observationResult)
   + [dct:includesEvent](http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent)
