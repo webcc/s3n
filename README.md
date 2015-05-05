@@ -77,11 +77,11 @@ here include:
 - **Domain of**:
 - **Range of**:
 - **Related properties**:
-  + [s3n:observedBy](https://imergo.com/ns/2015/s3n#observedBy)
-  + [s3n:observedProperty](https://imergo.com/ns/2015/s3n#observedProperty)
-  + [s3n:observationResult](https://imergo.com/ns/2015/s3n#observationResult)
+  + [s3n:observedBy]#observedBy)
+  + [s3n:observedProperty](#observedProperty)
+  + [s3n:observationResult](#observationResult)
   + [dct:includesEvent](http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent)
-  + [s3n:observationResultTime](https://imergo.com/ns/2015/s3n#observationResultTime)
+  + [s3n:observationResultTime](#observationResultTime)
 
 <h3 id="Condition">Condition</h3>
 
@@ -106,8 +106,8 @@ here include:
 - **Domain of**:
 - **Range of**:
 - **Related properties**:
-  + [s3n:hasCondition](https://imergo.com/ns/2015/s3n#hasCondition)
-  + [s3n:hasMeasurementProperty](https://imergo.com/ns/2015/s3n#hasCondition)
+  + [s3n:hasCondition](#hasCondition)
+  + [s3n:hasMeasurementProperty](#hasCondition)
 
 <h3 id="MeasurementProperty">MeasurementProperty</h3>
 
@@ -132,8 +132,8 @@ here include:
 - **Domain of**:
 - **Range of**:
 - **Related properties**:
- + [s3n:isProducedBy](https://imergo.com/ns/2015/s3n#isProducedBy)
- + [s3n:hasValue](https://imergo.com/ns/2015/s3n#hasValue) 
+ + [s3n:isProducedBy](#isProducedBy)
+ + [s3n:hasValue](#hasValue) 
  
 <h3 id="Property">Property</h3>
 
