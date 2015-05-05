@@ -54,8 +54,7 @@ here include:
   + dct:title 
   + dct:description
   + dct:hasPart
-
-##Sensor
+  
 
 <h3 id="Sensor">Sensor</h3>
 
@@ -84,61 +83,114 @@ here include:
   + [dct:includesEvent](http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent)
   + [s3n:observationResultTime](https://imergo.com/ns/2015/s3n#observationResultTime)
 
-##Condition
+<h3 id="Condition">Condition</h3>
 
-Used to specify ranges for qualities that act as conditions on a system/sensor's operation
+- **Label**: Condition (`https://imergo.com/ns/2015/s3n#Observation`)
+- **Description**: Used to specify ranges for qualities that act as conditions on a system/sensor's operation
+- **Domain of**:
+- **Range of**:
+- **Related properties**:
 
-##ObservationValue
+<h3 id="ObservationValue">ObservationValue</h3>
 
-The value of the result of an Observation. An Observation has a result which is the output of some sensor, the result is an information object that encodes some value for a Feature.
+- **Label**: ObservationValue (`https://imergo.com/ns/2015/s3n#Observation`)
+- **Description**:The value of the result of an Observation. An Observation has a result which is the output of some sensor, the result is an information object that encodes some value for a Feature.
+- **Domain of**:
+- **Range of**:
+- **Related properties**:
 
-##MeasurementCapability
+<h3 id="MeasurementCapability">MeasurementCapability</h3>
 
-Collects together measurement properties (accuracy, range, precision, etc) and the environmental conditions in which those properties hold, representing a specification of a sensor's capability in those conditions. 
-####Related Properties
-[s3n:hasCondition](https://imergo.com/ns/2015/s3n#hasCondition) <br>[s3n:hasMeasurementProperty](https://imergo.com/ns/2015/s3n#hasCondition)
+- **Label**: MeasurementCapability (`https://imergo.com/ns/2015/s3n#MeasurementCapability`)
+- **Description**:Collects together measurement properties (accuracy, range, precision, etc) and the environmental conditions in which those properties hold, representing a specification of a sensor's capability in those conditions. 
+- **Domain of**:
+- **Range of**:
+- **Related properties**:
+  + [s3n:hasCondition](https://imergo.com/ns/2015/s3n#hasCondition)
+  + [s3n:hasMeasurementProperty](https://imergo.com/ns/2015/s3n#hasCondition)
 
-##MeasurementProperty
+<h3 id="MeasurementProperty">MeasurementProperty</h3>
 
-An identifiable and observable characteristic of a sensor's observations or ability to make observations.
+- **Label**: MeasurementProperty (`https://imergo.com/ns/2015/s3n#MeasurementProperty`)
+- **Description**:An identifiable and observable characteristic of a sensor's observations or ability to make observations.
+- **Domain of**:
+- **Range of**:
+- **Related properties**:
 
-##SensorInput
+<h3 id="SensorInput">SensorInput</h3>
 
-An Event in the real world that 'triggers' the sensor. 
+- **Label**: SensorInput (`https://imergo.com/ns/2015/s3n#SensorInput`)
+- **Description**:An Event in the real world that 'triggers' the sensor. 
+- **Domain of**:
+- **Range of**:
+- **Related properties**:
 
-##SensorOutput
+<h3 id="SensorOutput">SensorOutput</h3>
 
-A sensor outputs a piece of information (an observed value), the value itself being represented by an ObservationValue.
-####Related Properties
-[s3n:isProducedBy](https://imergo.com/ns/2015/s3n#isProducedBy) <br>[s3n:hasValue](https://imergo.com/ns/2015/s3n#hasValue) 
-##Property
+- **Label**: SensorOutput (`https://imergo.com/ns/2015/s3n#SensorOutput`)
+- **Description**:A sensor outputs a piece of information (an observed value), the value itself being represented by an ObservationValue.
+- **Domain of**:
+- **Range of**:
+- **Related properties**:
+ + [s3n:isProducedBy](https://imergo.com/ns/2015/s3n#isProducedBy)
+ + [s3n:hasValue](https://imergo.com/ns/2015/s3n#hasValue) 
+ 
+<h3 id="Property">Property</h3>
 
-An observable Quality of an Event or Object.
+- **Label**: Property (`https://imergo.com/ns/2015/s3n#Property`)
+- **Description**:An observable Quality of an Event or Object.
+- **Domain of**:
+- **Range of**:
+- **Related properties**:
 
-##Accuracy
+<h3 id="Accuracy">Accuracy</h3>
 
-The closeness of agreement between the value of an observation and the true value of the observed quality.
+- **Label**: Accuracy (`https://imergo.com/ns/2015/s3n#Accuracy`)
+- **Description**:The closeness of agreement between the value of an observation and the true value of the observed quality.
+- **Domain of**:
+- **Range of**:
+- **Related properties**:
 
-##Frequency
+<h3 id="Frequency">Frequency</h3>
 
-The smallest possible time between one observation and the next.
+- **Label**: Frequency (`https://imergo.com/ns/2015/s3n#Frequency`)
+- **Description**:The smallest possible time between one observation and the next.
+- **Domain of**:
+- **Range of**:
+- **Related properties**:
 
-##Precision
+<h3 id="Precision">Precision</h3>
 
-The closeness of agreement between replicate observations on an unchanged or similar quality value: i.e., a measure of a sensor's ability to consitently reproduce an observation.
+- **Label**: Precision (`https://imergo.com/ns/2015/s3n#Frequency`)
+- **Description**:The closeness of agreement between replicate observations on an unchanged or similar quality value: i.e., a measure of a sensor's ability to consitently reproduce an observation.
+- **Domain of**:
+- **Range of**:
+- **Related properties**:
 
-##Resolution
+<h3 id="Precision">Resolution</h3>
 
-The smallest difference in the value of a quality being observed that would result in perceptably different values of observation results.
+- **Label**: Resolution (`https://imergo.com/ns/2015/s3n#Resolution`)
+- **Description**:The smallest difference in the value of a quality being observed that would result in perceptably different values of observation results.
+- **Domain of**:
+- **Range of**:
+- **Related properties**:
 
-##ResponseTime
+<h3 id="ResponseTime">ResponseTime</h3>
 
-The time between a (step) change inthe value of an observed quality and a sensor (possibly with specified error) 'settling' on an observed value.
+- **Label**: ResponseTime (`https://imergo.com/ns/2015/s3n#ResponseTime`)
+- **Description**:The time between a (step) change inthe value of an observed quality and a sensor (possibly with specified error) 'settling' on an observed value.
+- **Domain of**:
+- **Range of**:
+- **Related properties**:
 
-##Sensitivity
+##
+<h3 id="Sensitivity">Sensitivity</h3>
 
-Sensitivity is the quotient of the change in a result of sensor and the corresponding change in a value of a quality being observed.
-
+- **Label**: Sensitivity (`https://imergo.com/ns/2015/s3n#Sensitivity`)
+- **Description**:Sensitivity is the quotient of the change in a result of sensor and the corresponding change in a value of a quality being observed.
+- **Domain of**:
+- **Range of**:
+- **Related properties**:
 
 #Properties
 
