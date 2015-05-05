@@ -167,7 +167,7 @@ here include:
 - **Range of**:
 - **Related properties**:
 
-<h3 id="Precision">Resolution</h3>
+<h3 id="Resolution">Resolution</h3>
 
 - **Label**: Resolution (`https://imergo.com/ns/2015/s3n#Resolution`)
 - **Description**:The smallest difference in the value of a quality being observed that would result in perceptably different values of observation results.
