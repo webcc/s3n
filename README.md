@@ -208,28 +208,28 @@ here include:
 <h3 id="detects">detects</h3>
 
 A relation from a sensor to the Stimulus(input) that the sensor can detect.
-
+- **Label**: detects (`https://imergo.com/ns/2015/s3n#detects`)
 - **Domain**: [s3n:Sensor](#Sensor)
 - **Range**: [s3n:SesorInput](#SensorInput)
 
 <h3 id="observes">observes</h3>
 
 Relation between a Sensor and a Property that the sensor can observe.
-
+- **Label**: observes (`https://imergo.com/ns/2015/s3n#observes`)
 - **Domain**: [s3n:Sensor](#Sensor)
 - **Range**: [s3n:Property](#Property)
 
 <h3 id="hasMeasurementCapability">hasMeasurementCapability</h3>
 
 Relation from a Sensor to a MeasurementCapability describing the measurement properties of the sensor.
-
+- **Label**: hasMeasurementCapability (`https://imergo.com/ns/2015/s3n#hasMeasurementCapability`)
 - **Domain**: [s3n:Sensor](#Sensor)
 - **Range**: [s3n:MeasurementCapability](#MeasurementCapability)
 
 <h3 id="observedProperty">observedProperty</h3>
 
 Relation linking an Observation to the Property that was observed.
-
+- **Label**: observedProperty (`https://imergo.com/ns/2015/s3n#observedProperty`)
 - **Domain**: [s3n:Observation](#Observation)
 - **Range**: [s3n:Property](#Property)
 
@@ -238,7 +238,7 @@ Relation linking an Observation to the Property that was observed.
 Relation linking an Observation (i.e., a description of the context, the
 Situation, in which the observatioin was made) and a Result, which contains a
 value representing the value associated with the observed Property.
-
+- **Label**: observationResult (`https://imergo.com/ns/2015/s3n#observationResult`)
 - **Domain**: [s3n:Observation](#Observation)
 - **Range**: [s3n:SensorOutput](#SensorOutput)
 
@@ -246,20 +246,20 @@ value representing the value associated with the observed Property.
 
 Relation between a producer and a produced entity: for example, between a
  sensor and the produced output.
- 
+- **Label**: isProducedBy (`https://imergo.com/ns/2015/s3n#isProducedBy`)
 - **Domain**: [s3n:SensorOutput](#SensorOutput)
 - **Range**: [s3n:Sensor](#Sensor)
 
 <h3 id="observedBy">observedBy</h3>
 
 Relation between an Observation and Sensor.
-- **Label**: observedBy ('https://imergo.com/ns/2015/s3n#observedBy') 
+- **Label**: observedBy (`https://imergo.com/ns/2015/s3n#observedBy`)
 - **Domain**: [s3n:Observation](#Observayion)
 - **Range**: [s3n:Sensor](#Sensor)
 
 <h3 id="hasMeasurementProperty">hasMeasurementProperty</h3>
 
 Relation from a MeasurementCapability to a MeasurementProperty:
-
+- **Label**: hasMeasurementProperty (`https://imergo.com/ns/2015/s3n#hasMeasurementProperty`)
 - **Domain**: [s3n:MeasurementCapability](#MeasurementCapability)
 - **Range**: [s3n:MeasurementProperty](#MeasurementProperty)
