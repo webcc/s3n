@@ -51,9 +51,9 @@ here include:
 - **Domain of**:
 - **Range of**:
 - **Related properties**:
-  + dct:title 
-  + dct:description
-  + dct:hasPart
+  + [dct:title](http://purl.org/dc/terms/title)
+  + [dct:description](http://purl.org/dc/elements/1.1/description)
+  + [dct:hasPart](http://purl.org/dc/terms/hasPart)
   
 
 <h3 id="Sensor">Sensor</h3>
@@ -107,7 +107,7 @@ here include:
 - **Range of**:
 - **Related properties**:
   + [s3n:hasCondition](#hasCondition)
-  + [s3n:hasMeasurementProperty](#hasCondition)
+  + [s3n:hasMeasurementProperty](#hasMeasurementProperty)
 
 <h3 id="MeasurementProperty">MeasurementProperty</h3>
 
@@ -254,7 +254,7 @@ Relation between a producer and a produced entity: for example, between a
 
 Relation between an Observation and Sensor.
 - **Label**: observedBy (`https://imergo.com/ns/2015/s3n#observedBy`)
-- **Domain**: [s3n:Observation](#Observayion)
+- **Domain**: [s3n:Observation](#Observation)
 - **Range**: [s3n:Sensor](#Sensor)
 
 <h3 id="hasMeasurementProperty">hasMeasurementProperty</h3>
