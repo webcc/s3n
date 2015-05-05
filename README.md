@@ -279,3 +279,11 @@ Relation from a MeasurementCapability to a MeasurementProperty:
 - **Label**: hasMeasurementProperty (`https://imergo.com/ns/2015/s3n#hasMeasurementProperty`)
 - **Domain**: [s3n:MeasurementCapability](#MeasurementCapability)
 - **Range**: [s3n:MeasurementProperty](#MeasurementProperty)
+
+<h3 id="observationResultTime">observationResultTime</h3>
+
+The result time is the time when the procedure associated with the observation act was applied.
+- **Label**: observationResultTime (`https://imergo.com/ns/2015/s3n#observationResultTime`)
+- **Domain**: [s3n:Observation](#Observation)
+- **Range**: 
+- 
