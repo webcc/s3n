@@ -32,7 +32,7 @@ here include:
 | **[s3n:SensorInput](#SensorInput)** | SensorInput 	|An Event in the real world that 'triggers' the sensor|                     
 | **[s3n:SensorOutput](#SensorOutput)** | SensorOutput  |A sensor outputs a piece of information, the value itself being represented by an ObservationValue| [s3n:isProducedBy](#isProducedBy) <br>[s3n:hasValue](#hasValue)                                
 | **[s3n:Condition](#Condition)** | Condition     |Used to specify ranges for qualities that act as conditions on a system/sensor's operation |       
-| **[s3n:MeasurementCapability](#MeasurementCapability)** |Measurement Capability|Collects together measurement properties and the environmental conditions in which those properties hold| [s3n:hasCondition](#hasCondition) <br>[s3n:hasMeasurementProperty](#hasCondition)
+| **[s3n:MeasurementCapability](#MeasurementCapability)** |Measurement Capability|Collects together measurement properties and the environmental conditions in which those properties hold| [s3n:hasCondition](#hasCondition) <br>[s3n:hasMeasurementProperty](#hasMeasurementProperty)
 | **[s3n:ObservationValue](#ObservationValue)** | Observation Value |The value of the result of an Observation| 
 | **[s3n:MeasurementProperty](#MeasurementProperty)** | Measurement Property|An identifiable and observable characteristic of a sensor's observations or ability to make observations| 
 | **[s3n:Accuracy](#Accuracy)**			| Accuracy		|The closeness of agreement between the value of an observation and the true value of the observed quality|	|			
