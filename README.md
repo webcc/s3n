@@ -65,9 +65,9 @@ here include:
 - **Domain of**:
 - **Range of**:
 - **Related properties**:
-  + dct:title 
-  + dct:description
-  + dct:hasPart
+  + [s3n:observes](#observes)
+  + [s3n:detects](#detects)
+  + [s3n:hasMeasurementCapability](#hasMeasurementCapability)
 
 
 <h3 id="Observation">Observation</h3>
