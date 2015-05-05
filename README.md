@@ -286,4 +286,3 @@ The result time is the time when the procedure associated with the observation a
 - **Label**: observationResultTime (`https://imergo.com/ns/2015/s3n#observationResultTime`)
 - **Domain**: [s3n:Observation](#Observation)
 - **Range**: 
-- 
