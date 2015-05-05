@@ -28,7 +28,7 @@ here include:
 | ---------- | ----- | ----------- | ------------------ |
 | **[s3n:Device](#Device)** | Device | A device is a physical piece of technology - a system in a box. Devices may of course be built of smaller devices and software components (i.e. systems have components). | `dct:title` <br> `dct:description` <br> `dct:hasPart` |
 | **[s3n:Sensor](#Sensor)** | Sensor | Sensors may be physical devices, computational methods, a laboratory setup with a person following a method, or any other thing that can follow a method to observe a property. | [s3n:observes](#observes) <br> [s3n:detects](#detects) <br> [s3n:hasMeasurementCapability](#hasMeasurementCapability) |
-| **[s3n:Observation](#Observation)** | Observation	|A  situation in which a Sensing method has been used to estimate or calculate a value of a Property. | [s3n:observedBy](https://imergo.com/ns/2015/s3n#observedBy) <br>[s3n:observedProperty](https://imergo.com/ns/2015/s3n#observedProperty) <br>[s3n:observationResult](https://imergo.com/ns/2015/s3n#observationResult) <br>[dct:includesEvent](http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent) <br>[s3n:observationResultTime](https://imergo.com/ns/2015/s3n#observationResultTime) |
+| **[s3n:Observation](#Observation)** | Observation	|A  situation in which a Sensing method has been used to estimate or calculate a value of a Property. | **[s3n:observedBy](#observedBy)** <br>**[s3n:observedProperty](https://imergo.com/ns/2015/s3n#observedProperty) <br>[s3n:observationResult](https://imergo.com/ns/2015/s3n#observationResult) <br>[dct:includesEvent](http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent) <br>[s3n:observationResultTime](https://imergo.com/ns/2015/s3n#observationResultTime) |
 | **[s3n:SensorInput](#SensorInput)** | SensorInput 	|An Event in the real world that 'triggers' the sensor|                     
 | **[s3n:SensorOutput](#SensorOutput)** | SensorOutput  |A sensor outputs a piece of information, the value itself being represented by an ObservationValue| [s3n:isProducedBy](https://imergo.com/ns/2015/s3n#isProducedBy) <br>[s3n:hasValue](https://imergo.com/ns/2015/s3n#hasValue)                                
 | **[s3n:Condition](#Condition)** | Condition     |Used to specify ranges for qualities that act as conditions on a system/sensor's operation |       
@@ -209,29 +209,29 @@ here include:
 
 A relation from a sensor to the Stimulus(input) that the sensor can detect.
 
-- Domain: [s3n:Sensor](#Sensor)
-- Range: [s3n:SesorInput](#SensorInput)
+- **Domain**: [s3n:Sensor](#Sensor)
+- **Range**: [s3n:SesorInput](#SensorInput)
 
 <h3 id="observes">observes</h3>
 
 Relation between a Sensor and a Property that the sensor can observe.
 
-- Domain: [s3n:Sensor](#Sensor)
-- Range: [s3n:Property](#Property)
+- **Domain**: [s3n:Sensor](#Sensor)
+- **Range**: [s3n:Property](#Property)
 
 <h3 id="hasMeasurementCapability">hasMeasurementCapability</h3>
 
 Relation from a Sensor to a MeasurementCapability describing the measurement properties of the sensor.
 
-- Domain: [s3n:Sensor](#Sensor)
-- Range: [s3n:MeasurementCapability](#MeasurementCapability)
+- **Domain**: [s3n:Sensor](#Sensor)
+- **Range**: [s3n:MeasurementCapability](#MeasurementCapability)
 
 <h3 id="observedProperty">observedProperty</h3>
 
 Relation linking an Observation to the Property that was observed.
 
-- Domain: [s3n:Observation](#Observation)
-- Range: [s3n:Property](#Property)
+- **Domain**: [s3n:Observation](#Observation)
+- **Range**: [s3n:Property](#Property)
 
 <h3 id="observationResult">observationResult</h3>
 
@@ -239,27 +239,27 @@ Relation linking an Observation (i.e., a description of the context, the
 Situation, in which the observatioin was made) and a Result, which contains a
 value representing the value associated with the observed Property.
 
-- Domain: [s3n:Observation](#Observation)
-- Range: [s3n:SensorOutput](#SensorOutput)
+- **Domain**: [s3n:Observation](#Observation)
+- **Range**: [s3n:SensorOutput](#SensorOutput)
 
 <h3 id="isProducedBy">isProducedBy</h3>
 
 Relation between a producer and a produced entity: for example, between a
  sensor and the produced output.
  
-- Domain: [s3n:SensorOutput](#SensorOutput)
-- Range: [s3n:Sensor](#Sensor)
+- **Domain**: [s3n:SensorOutput](#SensorOutput)
+- **Range**: [s3n:Sensor](#Sensor)
 
 <h3 id="observedBy">observedBy</h3>
 
 Relation between an Observation and Sensor.
-
-- Domain: [s3n:Observation](#Observayion)
-- Range: [s3n:Sensor](#Sensor)
+- **Label**: observedBy ('https://imergo.com/ns/2015/s3n#observedBy') 
+- **Domain**: [s3n:Observation](#Observayion)
+- **Range**: [s3n:Sensor](#Sensor)
 
 <h3 id="hasMeasurementProperty">hasMeasurementProperty</h3>
 
 Relation from a MeasurementCapability to a MeasurementProperty:
 
-- Domain: [s3n:MeasurementCapability](#MeasurementCapability)
-- Range: [s3n:MeasurementProperty](#MeasurementProperty)
+- **Domain**: [s3n:MeasurementCapability](#MeasurementCapability)
+- **Range**: [s3n:MeasurementProperty](#MeasurementProperty)
