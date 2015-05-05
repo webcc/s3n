@@ -26,7 +26,7 @@ here include:
 #Classes   
 | Class Name | Label | Description | Related Properties |
 | ---------- | ----- | ----------- | ------------------ |
-| **[s3n:Device](#Device)** | Device | A device is a physical piece of technology - a system in a box. Devices may of course be built of smaller devices and software components (i.e. systems have components). | `dct:title` <br> `dct:description` <br> `dct:hasPart` |
+| **[s3n:Device](#Device)** | Device | A device is a physical piece of technology - a system in a box. Devices may of course be built of smaller devices and software components (i.e. systems have components). | [dct:title](http://purl.org/dc/terms/title) <br> [dct:description](http://purl.org/dc/elements/1.1/description) <br> [dct:hasPart](http://purl.org/dc/terms/hasPart) |
 | **[s3n:Sensor](#Sensor)** | Sensor | Sensors may be physical devices, computational methods, a laboratory setup with a person following a method, or any other thing that can follow a method to observe a property. | [s3n:observes](#observes) <br> [s3n:detects](#detects) <br> [s3n:hasMeasurementCapability](#hasMeasurementCapability) |
 | **[s3n:Observation](#Observation)** | Observation	|A  situation in which a Sensing method has been used to estimate or calculate a value of a Property. | [s3n:observedBy](#observedBy) <br>[s3n:observedProperty](#observedProperty) <br>[s3n:observationResult](#observationResult) <br>[dct:includesEvent](http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent) <br>[s3n:observationResultTime](#observationResultTime) |
 | **[s3n:SensorInput](#SensorInput)** | SensorInput 	|An Event in the real world that 'triggers' the sensor|                     
